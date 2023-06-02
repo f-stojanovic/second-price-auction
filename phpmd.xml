@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="My Project">
+    <description>PHPMD Ruleset for My Project</description>
+
+    <!-- Add rule sets or individual rules here -->
+
+    <!-- Rule set for basic coding standards -->
+    <rule ref="rulesets/codesize.xml"/>
+    <rule ref="rulesets/controversial.xml"/>
+    <rule ref="rulesets/design.xml"/>
+    <rule ref="rulesets/naming.xml"/>
+    <rule ref="rulesets/unusedcode.xml"/>
+
+    <!-- Exclude directories or files from analysis -->
+    <exclude-pattern>vendor/</exclude-pattern>
+    <exclude-pattern>var/</exclude-pattern>
+    <exclude-pattern>bin/</exclude-pattern>
+
+    <!-- Exclude specific files or directories -->
+    <exclude name="*/tests/*"/>
+    <exclude name="*/Test.php"/>
+    <exclude name="*/Fixtures/*"/>
+</ruleset>
